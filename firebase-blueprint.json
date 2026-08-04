@@ -1,0 +1,36 @@
+{
+  "entities": {
+    "links": {
+      "title": "Navigation Links",
+      "description": "Dynamic links displayed on the main page for navigation",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": "string" },
+        "description": { "type": "string" },
+        "category": { "type": "string" },
+        "icon": { "type": "string" },
+        "color": { "type": "string" },
+        "order": { "type": "number" },
+        "isActive": { "type": "boolean" },
+        "isFeatured": { "type": "boolean" },
+        "clicks": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "url", "category", "isActive"]
+    },
+    "settings": {
+      "title": "Site & Admin Settings",
+      "description": "Global application configuration and admin password hash",
+      "type": "object",
+      "properties": {
+        "adminPassword": { "type": "string" },
+        "siteTitle": { "type": "string" },
+        "siteSubtitle": { "type": "string" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

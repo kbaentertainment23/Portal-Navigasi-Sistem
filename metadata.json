@@ -1,0 +1,6 @@
+{
+  "name": "Sistem Link & Tautan Navigasi",
+  "description": "Aplikasi tautan navigasi utama dengan pengelolaan link dinamis (CRUD) dan pengaturan admin terproteksi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

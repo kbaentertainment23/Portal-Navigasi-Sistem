@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Links collection: allow public read, and allow create/update/delete
+    match /links/{linkId} {
+      allow read: if true;
+      allow write: if true;
+    }
+    // Settings collection: allow public read and write for admin configuration
+    match /settings/{settingId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}
